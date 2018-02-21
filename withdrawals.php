@@ -104,8 +104,8 @@ include_once 'includes/header.php';
 															<li><strong>Amount:</strong> <span class="text-success"><?php echo $value['amount'] ?> €</span></li>
 															<li><strong>Select Payment Processor:</strong><br />
 																<select class="form-control" name="payment_processor" id="payment_processor_<?php echo $value['id'] ?>" style="width:90%; margin-top: 10px">
-																	<option><strong>ADV</strong></option>
-																	<option><strong>Payeer</strong></option>
+																	<option>ADV</option>
+																	<option>Payeer</option>
 																	<option class="text-danger">Bitcoin (Coming Soon)</option>
 																	<option class="text-danger">Perfect Money (Coming Soon)</option>
 																	<option class="text-danger">Paypal (Coming Soon)</option>
@@ -116,7 +116,7 @@ include_once 'includes/header.php';
 														
 													</div>
 													<div class="modal-footer">
-														<button type="submit" id="btn-payout" class="btn btn-danger pull-right" style="margin-left: 10px;" data-wid="<?php echo $value['id'] ?>">Send Payout</button>
+														<button type="submit" class="btn btn-danger pull-right btn-payout" style="margin-left: 10px;" data-wid="<?php echo $value['id'] ?>">Send Payout</button>
 														<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
 													</div>
 												  </div>
