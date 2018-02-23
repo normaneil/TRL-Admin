@@ -3,16 +3,16 @@ session_start();
 require_once '../config/config.php';
 
 
-//print_r($_POST);exit;
+print_r($_POST);exit;
 
 
 $db->where('id', $_POST['withdrawal_id']);
 //Get data to pre-populate the form.
 $withdrawal = $db->getOne("withdrawals");
 
-//print_r($withdrawal);exit;
+print_r($withdrawal);exit;
 
-$m_shop = '446148722';
+$m_shop = '498603310';
 $m_orderid = ''.$withdrawal['id'];
 $m_amount = number_format(floatval($withdrawal['amount']), 2, '.', '');
 $m_curr = 'EUR';
